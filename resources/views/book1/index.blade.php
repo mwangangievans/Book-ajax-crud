@@ -23,7 +23,9 @@
                 <th scope="col">publisher</th>
                 <th scope="col">country</th>
                 <th scope="col">year</th>
-                <th width="100px">Action</th>
+                 <th scope="col">posted at</th>
+                <th scope="col">updated at</th>
+                <th width="col">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -115,6 +117,8 @@
             {data: 'publisher', name: 'publisher'},
             {data: 'country', name: 'country'},
             {data: 'year', name: 'year'},
+            {data: 'created_at', name: 'created_at'},
+            {data: 'updated_at', name: 'updated_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });
