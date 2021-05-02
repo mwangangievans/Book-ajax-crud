@@ -22,6 +22,8 @@ class BookController extends Controller
         // return view('book.index');
          $books = Book::latest()->get();
 
+         $books = json_encode($books);
+
         if ($request->ajax()) {
             $data = Book::latest()->get();
             return Datatables::of($data)
