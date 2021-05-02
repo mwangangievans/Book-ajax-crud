@@ -20,12 +20,10 @@ class BookController extends Controller
         // $book = Book::all();
         // //return response()->json($book);
         // return view('book.index');
-         $books = Book::latest()->get();
-
-         $books = json_encode($books);
+         $books = json_encode(Book::latest()->get());
 
         if ($request->ajax()) {
-            $data = Book::latest()->get();
+            $data = json_encode(Book::latest()->get());
             return Datatables::of($data)
                     ->addIndexColumn()
                     ->addColumn('action', function($row){
