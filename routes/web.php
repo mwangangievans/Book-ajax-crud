@@ -25,4 +25,4 @@ Route::resource('books', BookController::class);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/data', [BookController::class,'getData']);
+Route::get('/data', [BookController::class,'getData'])->name('data');

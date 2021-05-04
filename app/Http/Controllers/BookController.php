@@ -122,9 +122,10 @@ Book::updateOrCreate(['id' => $request->book_id],
         return response()->json(['success'=>'Book deleted successfully.']);
     }
 
-    public function getData()
-    {
-     $book = Book::all();
-     return $book;
-    }
+     public function getData()
+     {
+      $book = Book::all();
+    //  return $book;
+     return view('ajax');
+     }
 }

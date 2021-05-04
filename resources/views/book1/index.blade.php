@@ -11,9 +11,10 @@
 <body>
 
 <div class="container">
-    <h1>Book Collections</h1>
+    <h1>Book Collections</h1>    <a href="/"><button class="btn btn-primary">BACK</button></a>
+
     <a class="btn btn-success" href="javascript:void(0)" id="createNewBook"> Create New Book</a>
-    <table class="table table-bordered data-table table table-secondary table-striped ">
+    <table class="table table-bordered data-table cell-border compact stripe ">
         <thead>
             <tr>
                 <th scope="col">id</th>
@@ -25,7 +26,7 @@
                 <th scope="col">year</th>
                  <th scope="col">posted at</th>
                 <th scope="col">updated at</th>
-                <th width="col">Action</th>
+                <th scope="col">Action</th>
             </tr>
         </thead>
         <tbody>
